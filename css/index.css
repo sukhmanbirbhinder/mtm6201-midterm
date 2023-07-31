@@ -1,0 +1,205 @@
+.home-main{
+    background: url('../image/shoes_background_1.jpg') no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.main-content{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+
+}
+
+.main-content h1{
+    font-size: 3rem;
+
+}
+
+.main-content h1 p{
+    font-size: 1.2rem;
+    margin: .5rem 0;
+}
+
+.gradient-btn{
+    width: 200px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    text-decoration: none ;
+    color: white;
+    background-image: linear-gradient(
+        to right,
+        #FDD835 0%,
+        #FDD835 51%,
+        #FDD835 100%
+    );
+    border-radius: 10px;
+    background-size: 200% auto;
+    transition: .3s ease-in-out;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+}
+.main-content .gradient-btn{
+    width: 200px;
+    height: 45px;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+}
+
+.gradient-btn:hover{
+    background-position: right center;
+}
+@media screen and (max-width:600px) {
+    .main-content h1{
+        font-size: 2.25rem;
+    }
+    .main-content p{
+        font-size: 1rem;
+    
+    }
+    .gradient-btn{
+        width: 175px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+}
+
+.about{
+    padding: 1rem;
+
+}
+.about h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.about-sub{
+    display: flex;
+    max-width: 800px;
+    margin: 1rem auto;
+    text-align: left;
+}
+.about-sub > img{
+    max-height: 250px;
+    width: 300px;
+    max-width: 90%;
+    animation: animateimage 1s linear;
+}
+
+@keyframes animateimage {
+    from{
+        transform: translateY(-15px);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.about-sub .sub-sub-about{
+    padding: 1rem;
+    animation: animatext 0.5s linear;
+
+}
+@keyframes animatetext {
+    from{
+        transform: translateY(15px);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.about-sub .sub-sub-about p{
+  font-size: 14px;
+  margin: 1rem 0;  
+}
+.about-sub .gradient-btn{
+    width: 125px;
+    margin-top: 5px;
+    height: 30px;
+    font-size: 12px;
+;
+
+}
+
+@media screen and (max-width: 600px){
+    .about-sub{
+        flex-direction: column;
+    }
+    .about-sub:last-child{
+        flex-direction: column-reverse;
+    }
+}
+.about-companies{
+    max-width: 800px;
+    width: 90%;
+    background-color: #f1f1f1;
+    padding: 1rem .5rem;
+    margin: 1rem auto;
+}
+.about-companies h1{
+    font-size: 2rem;
+   color: #444;
+   text-transform: uppercase;
+   margin: 1rem; 
+}
+.about-companies h1 span{
+    color: #000;
+}
+.about-companies .company-logos{
+     color: #666;
+     display: flex;
+     justify-content: space-evenly;
+     font-size: 2rem;
+     transition: .3s ease-in;
+     max-width: 75%;
+     margin: 0px auto;
+
+}
+.about-companies .company-logos .fa-hover{
+    color:black;
+}
+
+@media screen and (max-width:750px){
+    .about-companies h1{
+        font-size: 1.5rem;
+    }
+
+}
+@media screen and (max-width:600px){
+    .about-companies h1{
+        font-size: 1.1rem;
+    }
+    .about-companies .compant-logos{
+        font-size: 1rem;
+    }
+
+}
+.subscribe{
+    text-align: center;
+    padding: 3rem 2rem 2rem 2rem;
+}
+
+.subscribe-box{
+    padding: 10px;
+
+}
+
+.subscribe-box input{
+    max-width: 300px;
+    width: 65%;
+    padding: 5px 10px;
+    height: 40px;
+}
+.subscribe-box button{
+    border: none;
+    background-color: #FDD835;
+    height: 40px;
+    padding: 0 1rem;
+    color: #f1f1f1;
+}

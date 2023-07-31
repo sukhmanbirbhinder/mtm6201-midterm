@@ -1,0 +1,17 @@
+section{
+    background: url('../image/shoes_background_1.jpg') no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+section > h1 {
+    color: #fff;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2.5rem;
+}
+
+.products{
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+}
